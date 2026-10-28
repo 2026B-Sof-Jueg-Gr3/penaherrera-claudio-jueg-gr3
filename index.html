@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#050b14">
+  <meta name="description" content="BOXING ARENA: El Desafío del Ring. Videojuego de boxeo 2D arcade creado con Phaser 3 para el taller Setup, Desarrollo y Despliegue con Phaser.">
+  <title>BOXING ARENA · El Desafío del Ring</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <div id="game-shell">
+      <div id="game-container" role="application" aria-label="BOXING ARENA, videojuego de boxeo" aria-describedby="game-help"></div>
+
+      <div id="loading-overlay" role="status" aria-live="polite">
+        <div class="loader-badge" aria-hidden="true">
+          <span class="loader-badge__glove"></span>
+        </div>
+        <p class="loader-title">BOXING ARENA</p>
+        <p class="loader-copy">PREPARANDO EL RING...</p>
+        <div class="loader-bar" aria-hidden="true"><span></span></div>
+      </div>
+    </div>
+
+    <p class="page-credit">
+      <span>CLAUDIO PEÑAHERRERA</span>
+      <span class="page-credit__dot" aria-hidden="true">•</span>
+      <span>TALLER PHASER 3 · 2026-B</span>
+    </p>
+  </main>
+
+  <p id="game-help" class="sr-only">
+    Controles: flecha izquierda y flecha derecha para moverte, tecla A para golpe rápido,
+    tecla S para golpe fuerte, tecla D para bloquear y barra espaciadora para iniciar o
+    reiniciar. El combate dura 60 segundos o termina cuando la salud de un boxeador llega a cero.
+  </p>
+
+  <div id="fatal-error" class="fatal-error" hidden>
+    <div class="fatal-error__card">
+      <p class="fatal-error__eyebrow">BOXING ARENA</p>
+      <h1>No se pudo iniciar el juego</h1>
+      <p id="fatal-error-message">
+        Revisa tu conexión a Internet o abre el proyecto con Live Server.
+      </p>
+    </div>
+  </div>
+
+  <noscript>
+    <div class="fatal-error">
+      <div class="fatal-error__card">
+        <p class="fatal-error__eyebrow">BOXING ARENA</p>
+        <h1>JavaScript está desactivado</h1>
+        <p>Activa JavaScript en el navegador para poder jugar.</p>
+      </div>
+    </div>
+  </noscript>
+
+  <!-- Phaser 3 con versión fija. Se incluye una copia local como respaldo sin conexión. -->
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3.90.0/dist/phaser.min.js"></script>
+  <script>
+    if (typeof Phaser === 'undefined') {
+      document.write('<script src="assets/vendor/phaser-3.90.0.min.js"><\/script>');
+    }
+  </script>
+  <script src="game.js"></script>
+</body>
+</html>

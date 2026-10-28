@@ -1,0 +1,8 @@
+# Archivos temporales del sistema y dependencias opcionales de pruebas
+node_modules/
+tests/node_modules/
+tests/*.log
+tests/.cache/
+*.tmp
+.DS_Store
+Thumbs.db

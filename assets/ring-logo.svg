@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-label="Emblema de Boxing Arena">
+  <defs>
+    <radialGradient id="fondo" cx="50%" cy="38%" r="70%">
+      <stop offset="0%" stop-color="#16345a"/>
+      <stop offset="70%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#050b14"/>
+    </radialGradient>
+    <linearGradient id="oro" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff0b8"/>
+      <stop offset="35%" stop-color="#ffc857"/>
+      <stop offset="70%" stop-color="#d59328"/>
+      <stop offset="100%" stop-color="#8b5a10"/>
+    </linearGradient>
+    <linearGradient id="azul" x1="10%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#8bd5ff"/>
+      <stop offset="45%" stop-color="#2e8cff"/>
+      <stop offset="100%" stop-color="#123e80"/>
+    </linearGradient>
+    <linearGradient id="rojo" x1="10%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#ffb09a"/>
+      <stop offset="45%" stop-color="#ff4d5e"/>
+      <stop offset="100%" stop-color="#8d1828"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Medallón exterior -->
+  <circle cx="128" cy="128" r="122" fill="#040a13"/>
+  <circle cx="128" cy="128" r="119" fill="none" stroke="url(#oro)" stroke-width="5"/>
+  <circle cx="128" cy="128" r="109" fill="url(#fondo)" stroke="#d79a31" stroke-width="2"/>
+  <circle cx="128" cy="128" r="101" fill="none" stroke="#f3cf79" stroke-width="1.2" stroke-dasharray="3 6" opacity="0.6"/>
+
+  <!-- Rayos discretos -->
+  <g fill="#ffd166" opacity="0.10">
+    <path d="M128 20 L139 61 L117 61 Z"/>
+    <path d="M236 128 L195 139 L195 117 Z"/>
+    <path d="M128 236 L139 195 L117 195 Z"/>
+    <path d="M20 128 L61 139 L61 117 Z"/>
+  </g>
+
+  <!-- Escudo central -->
+  <path d="M128 39 L184 60 L178 145 C174 179 152 201 128 213 C104 201 82 179 78 145 L72 60 Z"
+        fill="#091a2e" stroke="url(#oro)" stroke-width="4"/>
+  <path d="M128 49 L174 66 L169 142 C165 170 146 189 128 200 C110 189 91 170 87 142 L82 66 Z"
+        fill="none" stroke="#e4b34e" stroke-width="1" opacity="0.45"/>
+
+  <!-- Guante azul -->
+  <g transform="translate(84 122) rotate(-24)">
+    <rect x="0" y="35" width="42" height="27" rx="8" fill="#102b4f" stroke="#68c4ff" stroke-width="3"/>
+    <rect x="3" y="38" width="36" height="7" rx="3" fill="#e8b64c"/>
+    <path d="M5 33 C-7 24 -9 7 1 -8 C13 -26 38 -31 53 -18 C68 -5 66 17 53 29 C48 34 40 37 33 38 L5 38 Z"
+          fill="url(#azul)" stroke="#9bdfff" stroke-width="3"/>
+    <path d="M3 16 C-8 20 -8 35 4 39" fill="#1b5a9a" stroke="#9bdfff" stroke-width="3" stroke-linecap="round"/>
+    <path d="M19 -7 C30 -19 47 -16 54 -4" fill="none" stroke="#d6f4ff" stroke-width="4" stroke-linecap="round" opacity="0.65"/>
+  </g>
+
+  <!-- Guante rojo -->
+  <g transform="translate(172 122) rotate(24)">
+    <rect x="-42" y="35" width="42" height="27" rx="8" fill="#4c1220" stroke="#ff9a8a" stroke-width="3"/>
+    <rect x="-39" y="38" width="36" height="7" rx="3" fill="#e8b64c"/>
+    <path d="M-5 33 C7 24 9 7 -1 -8 C-13 -26 -38 -31 -53 -18 C-68 -5 -66 17 -53 29 C-48 34 -40 37 -33 38 L-5 38 Z"
+          fill="url(#rojo)" stroke="#ffb7a5" stroke-width="3"/>
+    <path d="M-3 16 C8 20 8 35 -4 39" fill="#8f2033" stroke="#ffb7a5" stroke-width="3" stroke-linecap="round"/>
+    <path d="M-19 -7 C-30 -19 -47 -16 -54 -4" fill="none" stroke="#ffe0d8" stroke-width="4" stroke-linecap="round" opacity="0.65"/>
+  </g>
+
+  <!-- Estrella central -->
+  <path d="M128 91 L136 112 L159 112 L141 126 L148 148 L128 134 L108 148 L115 126 L97 112 L120 112 Z"
+        fill="url(#oro)" stroke="#fff2c0" stroke-width="1.5"/>
+  <circle cx="128" cy="120" r="4" fill="#fff6d5"/>
+
+  <!-- Cinta inferior -->
+  <path d="M70 180 L186 180 L177 197 L128 208 L79 197 Z" fill="#0c1d33" stroke="#d8a139" stroke-width="2"/>
+  <text x="128" y="195" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-size="15" letter-spacing="2" fill="#ffd166">2026</text>
+</svg>
